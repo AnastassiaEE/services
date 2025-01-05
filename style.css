@@ -16,8 +16,64 @@ body {
 }
 
 main {
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 465px;
+  overflow: hidden;
+}
+
+.banner__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/hdpe.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.banner__shape {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 600px;
+  height: 100%;
+  background: rgba(213, 43, 74, 0.699);
+  transform: skew(-30deg);
+  filter: grayscale(0%);
+}
+
+.banner__title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.sec {
+  padding: 110px 0px 110px 0px;
 }
 
 .sec__title {
@@ -207,6 +263,9 @@ main {
   .container {
     max-width: 540px;
   }
+  .banner__title {
+    font-size: 44px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -260,6 +319,9 @@ main {
   .col-md-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .banner__title {
+    font-size: 60px;
   }
 }
 
@@ -318,6 +380,9 @@ main {
   .service {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .banner__title {
+    font-size: 70px;
   }
 }
 
