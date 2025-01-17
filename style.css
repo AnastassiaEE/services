@@ -15,9 +15,6 @@ body {
   font-weight: 400;
 }
 
-main {
-}
-
 .banner {
   position: relative;
   display: flex;
@@ -179,6 +176,10 @@ main {
   color: inherit !important;
 }
 
+.service__link-button:hover {
+  color: #e62b4a;
+}
+
 .service__link-button {
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -192,8 +193,50 @@ main {
   -moz-transition: all ease 400ms;
 }
 
-.service__link-button:hover {
+.footer {
+  background-color: #000;
+  position: relative;
+  padding: 130px 0;
+}
+
+.footer__title {
+  font-size: 18px;
+  letter-spacing: 0.72px;
+  color: #fff;
+  line-height: 0.8;
+  margin-bottom: 43px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer__text {
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  color: #aaaaaa;
+}
+
+.footer__link {
   color: #e62b4a;
+  text-decoration: none;
+}
+
+.footer__shape {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 300px solid rgba(255, 255, 255, 0.07); /* Полупрозрачный треугольник */
+}
+
+.footer__shape:nth-of-type(1) {
+  bottom: 0;
+  right: 0;
+}
+
+.footer__shape:nth-of-type(2) {
+  bottom: 0;
+  right: 170px;
 }
 
 .container {
